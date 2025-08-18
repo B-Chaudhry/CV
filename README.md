@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bisma Chaudhry - Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +19,7 @@
   <div class="section">
     <h2>Experience</h2>
     <div class="job">
-      <div class="job-title">Business Analytics & Process Optimization Consultant</div>
+      <h3 class="job-title">Business Analytics & Process Optimization Consultant</h3>
       <div class="job-meta">IMMA Collective | Remote, Italy | Sep 2024 – Present</div>
       <ul>
         <li>Conducted data-driven analysis to improve client engagement strategies.</li>
@@ -31,7 +30,7 @@
       </ul>
     </div>
     <div class="job">
-      <div class="job-title">Chief Technology Officer</div>
+      <h3 class="job-title">Chief Technology Officer</h3>
       <div class="job-meta">Travan Ltd. | Remote, Pakistan | Mar 2024 – Jun 2025</div>
       <ul>
         <li>Co-founded Travan, a travel agency offering customized solutions.</li>
@@ -42,12 +41,12 @@
       </ul>
     </div>
     <div class="job">
-      <div class="job-title">Elite Cyclist</div>
+      <h3 class="job-title">Elite Cyclist</h3>
       <div class="job-meta">Sports in Pakistan | Karachi, Pakistan | Aug 2019 – Present</div>
       <ul><li>Lead a team and achieved multiple national titles.</li></ul>
     </div>
     <div class="job">
-      <div class="job-title">Data Assistant</div>
+      <h3 class="job-title">Data Assistant</h3>
       <div class="job-meta">NIH Pakistan | Islamabad, Pakistan | Mar 2021 – Aug 2022</div>
       <ul>
         <li>Worked frontline in COVID hospital & vaccination center under NIMS project.</li>
@@ -57,7 +56,7 @@
       </ul>
     </div>
     <div class="job">
-      <div class="job-title">Data Collector</div>
+      <h3 class="job-title">Data Collector</h3>
       <div class="job-meta">Data Nomad | Pakistan | Jun 2020 – Dec 2020 (Freelance)</div>
       <ul>
         <li>Data labeling for ByteDance AI image recognition system.</li>
@@ -65,7 +64,7 @@
       </ul>
     </div>
     <div class="job">
-      <div class="job-title">Machine Learning QA Engineer</div>
+      <h3 class="job-title">Machine Learning QA Engineer</h3>
       <div class="job-meta">Dice Analytics | Islamabad, Pakistan | Jun 2020 – Dec 2020</div>
       <ul>
         <li>Developed image recognition ML pipeline for World Bank project.</li>
