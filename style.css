@@ -53,60 +53,7 @@ h2 {
   font-weight: bold;
   margin: 0 0 4px 0;     /* Add spacing below */
   color: #222;
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f9;
-  margin: 0;
-  padding: 20px;
 }
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.card-header {
-  background: #0077b6;
-  color: white;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.card-content {
-  padding: 15px;
-  display: none; /* hidden by default */
-}
-
-.card-content.show {
-  display: block; /* shown when active */
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #0077b6;
-}
-
-.card ul {
-  padding-left: 20px;
-}
-
-.card ul li {
-  margin-bottom: 8px;
-}
-
 ul {
   margin: 5px 0 10px 20px;
 }
