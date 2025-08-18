@@ -74,7 +74,52 @@
       </ul>
     </div>
   </div>
+ <h1 style="text-align:center;">Project Portfolio</h1>
 
+  <div class="projects-container">
+    
+    <!-- Project 1 -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        CRM Setup & Automation – Travan
+      </div>
+      <div class="card-content">
+        <h3>Client: Travan Travel</h3>
+        <p>Custom CRM setup for premium travel company with integrated lead funnel automation.</p>
+        <ul>
+          <li>Optimized pipeline for proposals & bookings</li>
+          <li>Automated lead qualification using Zapier</li>
+          <li>Integrated payment + proposal workflows</li>
+        </ul>
+        <p><strong>Tools:</strong> Pipedrive, Zapier, Google Workspace</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        Smart Systems for Social Impact – IMMA Collective
+      </div>
+      <div class="card-content">
+        <h3>Client: IMMA Collective</h3>
+        <p>Workflow audit & automation strategy for a social impact consultancy.</p>
+        <ul>
+          <li>Performed full workflow audit across Salesforce & Smartsuite</li>
+          <li>Restructured CRM pipelines & dashboards</li>
+          <li>Built automation templates & SOP hub in Notion</li>
+        </ul>
+        <p><strong>Tools:</strong> Smartsuite, Zapier, Notion, Slack, Miro</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleCard(header) {
+      const content = header.nextElementSibling;
+      content.classList.toggle("show");
+    }
+  </script>
   <div class="section">
     <h2>Skills</h2>
     <ul class="skills">
