@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bisma Chaudhry - Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bisma Chaudhry</h1>
+  <div class="contact">
+    📞 +92 317 5941347 &nbsp; | &nbsp;
+    <a href="mailto:bismach2018@gmail.com">✉️ bismach2018@gmail.com</a> &nbsp; | &nbsp;
+    <a href="https://www.linkedin.com/in/bisma-basim/">LinkedIn</a>
+  </div>
+
+  <p>
+    Experienced systems and automation consultant with a background in bioinformatics and a strong focus on AI-driven operational efficiency. Skilled in designing intelligent workflows, optimizing CRM infrastructure, and automating lead funnels for small teams and growing businesses. Proficient in low-code platforms including Zapier, Make, and OpenAI, with a proven ability to translate business needs into scalable, data-informed systems. Adept at bridging strategic planning with technical execution to support go-to-market initiatives, enhance client engagement, and streamline backend operations.
+  </p>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-title">Business Analytics & Process Optimization Consultant</div>
+      <div class="job-meta">IMMA Collective | Remote, Italy | Sep 2024 – Present</div>
+      <ul>
+        <li>Conducted data-driven analysis to improve client engagement strategies.</li>
+        <li>Led CRM optimization and workflow redesign.</li>
+        <li>Managed LinkedIn presence using AI tools.</li>
+        <li>Applied practical AI solutions to workflows.</li>
+        <li><b>Tech Stack:</b> Salesforce, Smartsuite, Notion, Miro, Zapier, Google Colab, Airtable, Squarespace, Bardeen</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-title">Chief Technology Officer</div>
+      <div class="job-meta">Travan Ltd. | Remote, Pakistan | Mar 2024 – Jun 2025</div>
+      <ul>
+        <li>Co-founded Travan, a travel agency offering customized solutions.</li>
+        <li>Developed AI prompt scripts and automation flows for lead management.</li>
+        <li>Implemented CRMs and AI-powered low-code workflows.</li>
+        <li>Planned and executed GTM strategy for Travan.</li>
+        <li><b>Tech Stack:</b> OpenAI, Google Workspace, Asana, Slack, Zoho CRM, Make, Coda AI</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-title">Elite Cyclist</div>
+      <div class="job-meta">Sports in Pakistan | Karachi, Pakistan | Aug 2019 – Present</div>
+      <ul><li>Lead a team and achieved multiple national titles.</li></ul>
+    </div>
+    <div class="job">
+      <div class="job-title">Data Assistant</div>
+      <div class="job-meta">NIH Pakistan | Islamabad, Pakistan | Mar 2021 – Aug 2022</div>
+      <ul>
+        <li>Worked frontline in COVID hospital & vaccination center under NIMS project.</li>
+        <li>Managed vaccine & patient data; generated daily reports.</li>
+        <li>Optimized vaccine inventory through custom software.</li>
+        <li><b>Tech Stack:</b> Excel, Covim, STATA</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-title">Data Collector</div>
+      <div class="job-meta">Data Nomad | Pakistan | Jun 2020 – Dec 2020 (Freelance)</div>
+      <ul>
+        <li>Data labeling for ByteDance AI image recognition system.</li>
+        <li><b>Tech Stack:</b> Computer Vision Annotation Tool</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-title">Machine Learning QA Engineer</div>
+      <div class="job-meta">Dice Analytics | Islamabad, Pakistan | Jun 2020 – Dec 2020</div>
+      <ul>
+        <li>Developed image recognition ML pipeline for World Bank project.</li>
+        <li>Conducted Quality Control on AI models.</li>
+        <li><b>Tech Stack:</b> Python, HTML, ML, Jupyter, Tableau</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li><b>Technical:</b> CRM integration, Process Development & Automation</li>
+      <li><b>Soft:</b> Communication, Adaptability, Collaboration, Problem-Solving, Discipline</li>
+      <li><b>Professional:</b> Project Management, Strategic Planning, Team Management</li>
+      <li><b>Languages:</b> English (Advanced), Urdu (Native), Italian (A1)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul class="education">
+      <li><b>Università degli Studi di Verona</b> – MSc Medical Bioinformatics | Verona, Italy | Oct 2023</li>
+      <li><b>Comsats</b> – BTech Bioinformatics | Islamabad, Pakistan | Sep 2019 – Jul 2023</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Honours</h2>
+    <ul class="honours">
+      <li><b>National Cycling Championship</b> | Individual Time Trial | Gold | 2024</li>
+      <li><b>Tour of Islamabad</b> | Stage Race | Best Young Rider & Tour Winner | 2023</li>
+      <li><b>Asian Cycling Championship</b> | Individual Time Trial | Top 15 | 2023</li>
+    </ul>
+  </div>
+
+</body>
+</html>
