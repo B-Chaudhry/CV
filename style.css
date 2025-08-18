@@ -53,53 +53,58 @@ h2 {
   font-weight: bold;
   margin: 0 0 4px 0;     /* Add spacing below */
   color: #222;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
 }
-.projects-section {
-  padding: 2rem;
-}
-.projects-grid {
+
+.projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-.project-card {
-  background: #fff;
+
+.card {
+  background: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  transition: 0.3s;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.project-card:hover {
-  transform: translateY(-5px);
-}
-.project-card h3 {
-  margin-bottom: 0.5rem;
-}
-.project-details {
-  display: none;
-  margin-top: 1rem;
-}
-.toggle-btn {
-  background: #2563eb;
+
+.card-header {
+  background: #0077b6;
   color: white;
-  padding: 0.4rem 0.8rem;
-  border: none;
-  border-radius: 6px;
+  padding: 15px;
   cursor: pointer;
-  margin-top: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
 }
-.toggle-btn:hover {
-  background: #1d4ed8;
+
+.card-content {
+  padding: 15px;
+  display: none; /* hidden by default */
 }
-.project-details table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
+
+.card-content.show {
+  display: block; /* shown when active */
 }
-.project-details th, .project-details td {
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  text-align: left;
+
+.card h3 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
 }
 
 ul {
