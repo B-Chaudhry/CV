@@ -54,14 +54,27 @@ h2 {
   margin: 0 0 4px 0;     /* Add spacing below */
   color: #222;
 }
-.job-meta a {
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.job-meta .company a {
   color: #0066cc;
   text-decoration: none;
   font-weight: bold;
 }
 
-.job-meta a:hover {
+.job-meta .company a:hover {
   text-decoration: underline;
+}
+
+.job-meta .details {
+  color: #444;
+  font-style: italic;
 }
 ul {
   margin: 5px 0 10px 20px;
