@@ -76,6 +76,37 @@ h2 {
   color: #444;
   font-style: italic;
 }
+.reports-section {
+  margin-top: 0.5rem;   /* space above reports section */
+  margin-left: 1.2rem;  /* indent to show it’s nested */
+}
+
+.reports-section h5 {
+  font-size: 0.95rem;   /* smaller than job titles */
+  font-weight: 600;     /* semi-bold */
+  color: #444;          /* softer than main headings */
+  margin-bottom: 0.3rem;
+}
+
+.reports-section ul {
+  list-style-type: none;  /* remove default bullets */
+  padding-left: 0;
+}
+
+.reports-section li {
+  margin: 0.2rem 0;
+}
+
+.reports-section a {
+  text-decoration: none;
+  color: #0066cc;        /* link color */
+  font-size: 0.9rem;
+}
+
+.reports-section a:hover {
+  text-decoration: underline;
+}
+
 ul {
   margin: 5px 0 10px 20px;
 }
