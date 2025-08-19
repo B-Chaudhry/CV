@@ -54,6 +54,15 @@ h2 {
   margin: 0 0 4px 0;     /* Add spacing below */
   color: #222;
 }
+.job-meta a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.job-meta a:hover {
+  text-decoration: underline;
+}
 ul {
   margin: 5px 0 10px 20px;
 }
