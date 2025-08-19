@@ -1,0 +1,744 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Are you ready to Freelance?</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(84, 72, 49, 0.08); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1189f4b7-11d6-4638-944c-333fd5e564bd" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/chart_blue.svg"/></div><h1 class="page-title">Are you ready to Freelance?</h1><p class="page-description"></p></header><div class="page-body"><p id="cdb18872-0469-484c-931c-dc330102706e" class="">This report consists of three main parts:</p><ol type="1" id="662bbb15-9285-4450-b8e5-fe4eb8967c0f" class="numbered-list" start="1"><li>Essential insights derived from the data</li></ol><ol type="1" id="fd4b4dda-026f-4f3f-9209-6c77d4caf12d" class="numbered-list" start="2"><li>Applications of these insights for IMMA (details will be included under each insight)</li></ol><ol type="1" id="0f2d6094-5908-4195-a1dd-b5f47133eac9" class="numbered-list" start="3"><li>Suggestions for developing a more effective quiz</li></ol><p id="66f905a6-9582-416d-995e-8b915ded9f50" class="">
+</p><h1 id="da59b9ad-0feb-4ed8-ae46-62673aaafb07" class=""><strong>Insights:</strong></h1><p id="9daf7c47-289e-47d7-b48f-5578708c614c" class="">
+</p><p id="c5360333-b6df-40f3-9f19-3060e59177a5" class="">
+</p><figure id="045496de-cbf8-4360-971e-e4ae01668eb4" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image.png"><img style="width:768px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image.png"/></a></figure><p id="61c64dde-fad0-4eae-8dad-c1d024be7849" class="">
+</p><p id="fb082a22-a066-4efa-916e-125fe87685a8" class="">
+</p><ol type="1" id="f382d044-8a59-4939-a58a-fc689e8b818c" class="numbered-list" start="1"><li><strong>List of People</strong>:<ul id="92053754-2f9a-4c6b-9422-c9c443b60e03" class="bulleted-list"><li style="list-style-type:disc">The distribution shows that &#x27;Somewhat clear&#x27; has a higher count across most categories compared to &#x27;Not clear&#x27;.</li></ul><ul id="6977498f-c819-49bd-b372-68154ee409f5" class="bulleted-list"><li style="list-style-type:disc">This suggests that individuals who are &#x27;Somewhat clear&#x27; about their ideal client tend to have a more defined list of people they know.</li></ul></li></ol><ol type="1" id="9011afcd-0aa0-432c-aea3-93f492a02cb7" class="numbered-list" start="2"><li><strong>Public Profile</strong>:<ul id="4ef634b0-a158-475f-8165-27720c386dc0" class="bulleted-list"><li style="list-style-type:disc">The distribution indicates that &#x27;Somewhat clear&#x27; individuals are more likely to have an active and consistent public profile compared to &#x27;Not clear&#x27; individuals.</li></ul><ul id="fc7abb70-37de-4888-b630-947e390b2961" class="bulleted-list"><li style="list-style-type:disc">&#x27;Not clear&#x27; individuals are more likely to have been quiet for some time.</li></ul></li></ol><ol type="1" id="416bf202-018e-4b9d-8cde-bcc9f1572db1" class="numbered-list" start="3"><li><strong>Support Network</strong>:<ul id="8f209dd1-890a-41e0-bf66-5c9536f87308" class="bulleted-list"><li style="list-style-type:disc">The distribution shows that &#x27;Somewhat clear&#x27; individuals tend to have a stronger support network compared to &#x27;Not clear&#x27; individuals.</li></ul><ul id="c3a2f088-b7db-455d-bca3-e3e00e961373" class="bulleted-list"><li style="list-style-type:disc">&#x27;Not clear&#x27; individuals are more likely to have some support but could be stronger.</li></ul></li></ol><ol type="1" id="8c886100-338c-433b-b05c-8abb7cdb9d4d" class="numbered-list" start="4"><li><strong>Time Available</strong>:<ul id="66f2ec5a-b160-49a6-8c2e-ca7bd9f95cd2" class="bulleted-list"><li style="list-style-type:disc">The distribution indicates that there is no significant difference in the time available between &#x27;Not clear&#x27; and &#x27;Somewhat clear&#x27; individuals.</li></ul><ul id="f69bb95a-9dc6-4b0a-907e-2256c23689d9" class="bulleted-list"><li style="list-style-type:disc">Both groups have similar distributions across different categories of time availability.</li></ul></li></ol><p id="823f2899-5c2b-42c6-a020-141f427973a2" class="">In summary, individuals who are &#x27;Somewhat clear&#x27; about their ideal client tend to have a more defined list of people, a more active public profile, and a stronger support network compared to those who are &#x27;Not clear&#x27;. However, the time available does not show a significant difference between the two groups.</p><p id="4275a2ed-ffea-4b51-8777-9c8565f0f3f5" class="">
+</p><h2 id="380f506f-4f6c-4774-addb-dcd6f3b70441" class="">How much time people want to spend on their business ?</h2><p id="22ad49f5-e0c0-4255-a23f-f57c0cb8a0b2" class="">Most people prefer to dedicate part-time hours to their business. Specifically, many allocate between 8-19 hours, while a significant number commit 20-39 hours, both of which fall within the part-time range.</p><p id="6f69c7e0-a700-44fc-be42-0e714ec770b2" class="">
+</p><ul id="a8124bd6-a350-46dd-abdb-52340eb10098" class="toggle"><li><details open=""><summary>Count Graph </summary><figure id="40cd337c-7154-4c8e-a424-7d2b18acc550" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Image_17-05-24_at_12.36.jpeg"><img style="width:1696px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Image_17-05-24_at_12.36.jpeg"/></a></figure><p id="2341ef2f-c88a-4f42-9859-38bed62265b4" class="">
+</p></details></li></ul><p id="a40c32a7-6e32-4cbd-8957-bf9802b3f9b3" class="">
+</p><h2 id="4767ae0e-68f2-408b-96d2-4157d8eceae8" class="">General overview of highest and lowest categories?</h2><p id="54873ade-731e-4fbf-a2a0-461292aedc03" class="">
+</p><p id="b6275b7c-cd7e-4e72-ba3d-fb89d0e9d9a5" class="">This is the overview of the highest category. We can clearly see that most people chose &quot;working for yourself&quot; as their answer.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="ae0e511e-40f5-492d-87c2-88f554f532f8" class="code code-wrap"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Highest_Category Count: 
+working for yourself     158
+financial security        44
+your offering             37
+finding opportunities     12</code></pre><figure id="1896e0f6-d167-44d7-9527-e6a9f2cf2214" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-18_at_17.11.53.png"><img style="width:709.9921875px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-18_at_17.11.53.png"/></a></figure><p id="ca518954-42e3-45fb-afc6-376171bacce7" class="">In contrast to the highest category, the lowest category primarily chose finding opportunities. Financial security followed closely in second place, while your offering stood third.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="dcdea208-4873-4066-90d8-c2b127039bec" class="code code-wrap"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Lowest_Category:
+finding opportunities    87
+financial security       83
+your offering            76
+working for yourself      5</code></pre><p id="4e2c9549-f5ee-41c1-9245-42334f5653a6" class="">
+</p><figure id="c0e3fa31-398b-4faf-9086-4c2cffa299e6" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%201.png"><img style="width:433px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%201.png"/></a></figure><p id="521749d5-a1ea-468d-bfa2-db38e300111a" class=""> </p><p id="0dbc9251-2ad8-4228-8fc3-3789fa75c817" class="">
+</p><h2 id="f45441d0-7f5d-4e56-a551-730b57c913fe" class="">What is the most important thing people are struggling with?</h2><p id="5bef4889-7aa7-4862-a8ec-8f716c456347" class="">I generally compared the negative responses among the columns and this was the result. So, according to this data most people are struggling with the starting capital and financial support and then other things. </p><ol type="1" id="968359e0-7bbd-403a-a8f8-ffc78a30091f" class="numbered-list" start="1"><li>Starting capital</li></ol><ol type="1" id="d8b199a5-94a0-47d8-8115-e5c7b51f3387" class="numbered-list" start="2"><li>Financial support</li></ol><ol type="1" id="a218bea9-b8d9-4e13-9ef6-6d7fbb855d3e" class="numbered-list" start="3"><li>Ideal client</li></ol><ol type="1" id="24f92806-b864-4a93-86eb-6fc83a3954a4" class="numbered-list" start="4"><li>Clarity of offering</li></ol><ol type="1" id="5a22ab07-19c9-49c3-9f26-3edac620de61" class="numbered-list" start="5"><li>Working alone</li></ol><ol type="1" id="51773dd9-eb7e-45a7-88aa-43edb3d6c1ed" class="numbered-list" start="6"><li>Relationships</li></ol><h2 id="eeb38688-aeda-4781-90c7-ed7b91b7a993" class="">General Overview  of Clarity of offering and Ideal Client.</h2><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="7acc7f8c-caf5-4ec2-a7cb-857ce7240fa8" class="code code-wrap"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Clarity_of_offering
+Somewhat clear    155
+Very clear         72
+Not clear          24
+Name: count, dtype: int64
+
+Ideal_client_
+Somewhat clear     138
+Yes, very clear     68
+Not clear           45</code></pre><figure id="23663854-4762-4d20-9e7e-817413f13552" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%202.png"><img style="width:709.984375px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%202.png"/></a></figure><p id="d5bead5c-40af-4ecd-8e5d-61a58be86776" class="">Based on the numbers, we can infer that most people somewhat understand what they want to offer and who the ideal clients are.</p><p id="e01209a8-46f4-4386-8d15-5fdf94b858ef" class="">
+</p><h2 id="9ff4e63a-2a21-4e9b-bcd3-b284fce2c3e6" class="">Who are the people who are less secure on their offering ?</h2><p id="d85f0d90-cb9a-4b79-9022-fd9973a3bdcc" class="">I have separated people who said less secure and </p><figure id="a976ec2a-456d-462e-bb5f-cfad3fd5d991"><div class="source"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/somewhat_clear_responses.xlsx">somewhat_clear_responses.xlsx</a></div></figure><figure id="8ed02a30-bbe2-4c6b-b8d6-9633b9d6ffc8"><div class="source"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/not_clear_responses-2.xlsx">not_clear_responses-2.xlsx</a></div></figure><figure id="0dca5631-24b6-4a33-85d5-c6b6c2d2030c" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%203.png"><img style="width:709.984375px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%203.png"/></a></figure><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1e3001ae-241d-4ae3-85e5-f2ae2bed96e4" class="code code-wrap"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Counts of Clarity of Offering by Years of Experience:
+Clarity_of_offering  Not clear  Somewhat clear  Very clear
+Years_of_experience
+1-4 years                    5              38           8
+10+ years                    7              60          31
+5-9 years                    9              55          30
+Less than 1 year             3               2           3</code></pre><figure id="547bd46e-d089-493e-a4c0-d7dd840f5cab" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%204.png"><img style="width:524px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/image%204.png"/></a></figure><p id="3a682b0a-0549-4f3e-8f9d-ee28c40cd105" class=""> </p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="cd9176a8-7dcc-4b23-932e-b78047994174" class="code code-wrap"><code class="language-Plain Text" style="white-space:pre-wrap;word-break:break-all">Counts of Ideal Client Clarity by Years of Experience:
+
+Ideal_client_        Not clear  Somewhat clear  Yes, very clear
+Years_of_experience
+1-4 years                   11              26               14
+10+ years                   16              54               28
+5-9 years                   15              54               25
+Less than 1 year             3               4                1</code></pre><p id="1aff1711-0ce3-4ac0-8a34-91fb6fdddb8e" class="">
+</p><ul id="76fe3e81-f717-4317-86ca-407ba2c78d6d" class="toggle"><li><details open=""><summary><strong>How the Counts Are Distributed on the Graphs (just for your understanding):</strong></summary><ol type="1" id="51cab555-46e4-49e6-8838-98f2464e32c9" class="numbered-list" start="1"><li><strong>Y-axis (Count)</strong>:<ul id="dfbef5b1-ad6d-4e45-b6df-bc9fb2509a01" class="bulleted-list"><li style="list-style-type:disc">The y-axis represents the number of respondents in each category. For instance, if there are 5 respondents with &quot;1-4 years&quot; of experience who have &quot;Intermediate&quot; clarity of offering, the height of the corresponding bar segment will be 5.</li></ul></li></ol><ol type="1" id="ae9a11f6-208b-42ea-9e15-ee8aec09082c" class="numbered-list" start="2"><li><strong>X-axis (Years of Experience)</strong>:<ul id="f2800e5a-2723-4e74-a200-b59ad337b5dd" class="bulleted-list"><li style="list-style-type:disc">The x-axis categorizes respondents based on their years of experience. Each bar corresponds to a specific range of years (e.g., &quot;Less than 1 year&quot;, &quot;1-4 years&quot;, &quot;5-9 years&quot;, &quot;10+ years&quot;).</li></ul></li></ol><ol type="1" id="036efba1-a8eb-4602-92f1-50c5edd5cc5b" class="numbered-list" start="3"><li><strong>Bar Segments</strong>:<ul id="3efeead8-07a9-49d3-ab58-9cf74baa5948" class="bulleted-list"><li style="list-style-type:disc">Each bar is divided into segments representing the different levels of &#x27;Clarity_of_offering&#x27; or &#x27;Ideal_client_&#x27;. The segments are stacked on top of each other.</li></ul><ul id="ae073b80-04b6-4034-9cdf-c2bee590d5e2" class="bulleted-list"><li style="list-style-type:disc">For &#x27;Clarity_of_offering&#x27;, we have segments like &quot;Very Clear&quot;, &quot;Clear&quot;, &quot;Somewhat Clear&quot;, &quot;Not Clear&quot;.</li></ul><ul id="173457e3-6b5d-4ec0-b94e-9d5adee279f7" class="bulleted-list"><li style="list-style-type:disc">For &#x27;Ideal_client_&#x27;, you might have segments like &quot;Very Clear&quot;, &quot;Clear&quot;, &quot;Somewhat Clear&quot;, &quot;Not Clear&quot;.</li></ul></li></ol><p id="a126d109-4668-4e9d-b40e-6d2ea63b6f12" class="">
+</p></details></li></ul><h2 id="8fda6d3b-1885-4ab0-a727-f025ef8e45cb" class="">What kind of people have more time available? </h2><ul id="60d97593-cc69-4358-bc35-68a048d8ae76" class="toggle"><li><details open=""><summary>Graph</summary><figure id="63d5289f-2827-47cc-abe6-7bd24da0325e" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_12.59.08.png"><img style="width:720px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_12.59.08.png"/></a></figure><p id="7057505c-e378-4f13-b4e4-d7a7ca8e16dd" class="">
+</p></details></li></ul><p id="77f9226b-aec8-4b83-a28f-5dbd2bd3d399" class="">
+</p><ul id="652e5eb4-0ef4-4492-814c-7e4d9274dc86" class="toggle"><li><details open=""><summary>Key notes to understand the graph: </summary><p id="bab6db38-a0e8-4035-bb92-bd2c1a36563d" class="">Less than 8 hours: 1, 8-19 h: 2, 20-39 h: 3, 40+ h: 4</p></details></li></ul><p id="60dc13b9-13b7-432f-8c3b-db1f95c801c8" class=""><br/>Those who are just starting or have been working for over 10 years often prefer 40 plus hours for self employment or business. On the other hand, individuals with mid-level experience tend to prefer part-time work on their business</p><p id="6a463b07-2cb8-4789-a10b-d9388378eb92" class="">
+</p><p id="53c73697-ddb7-49d4-8452-33d03c83b823" class=""><mark class="highlight-teal"><strong>Application :</strong></mark><mark class="highlight-teal">  </mark></p><p id="ec344785-6a12-4a8f-b696-51a25ea58762" class="">Tailor your part-time job opportunities to attract freelancers with 1-9 years of experience. For full-time opportunities and people want to work full time on their business, focus on those with extensive experience or newcomers.</p><h2 id="99c2bbef-0c12-470b-bdc7-1ab0c28ecaaa" class="">How time availability of individuals is related with their comfort of working alone?</h2><p id="25eecc57-de19-4491-9319-ea7180b7bb34" class="">Analysis suggests that individuals who are comfortable working alone also tend to have more time available for freelancing. </p><p id="a62c523c-857f-4869-aff3-13e7b49a3780" class=""><mark class="highlight-teal"><strong>Application:</strong></mark><strong> </strong>Apart from group activities also create something to Support Solo Work Preferences like maybe provide resources and tools that support solo work. </p><p id="17b06e36-ac47-498b-a9a5-030bca343e69" class="">
+</p><ul id="53667d1c-f1a7-4b1d-8165-3591e8711e96" class="toggle"><li><details open=""><summary>Correlation Table with years of experience </summary><figure id="5c6e3b4d-fc9b-414d-bd5c-9caaa0508cfd" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.09.54.png"><img style="width:421px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.09.54.png"/></a></figure><p id="047bce4c-1f3d-4346-93f4-c87ed588f651" class="">
+</p></details></li></ul><h2 id="f09bbc31-da57-417d-a63a-d2e82b4dda97" class="">Are people with more experience comfortable working alone?</h2><p id="62b664b5-82d2-44fb-8824-954f2ffb8985" class="">Contrary to what one might expect, individuals with longer careers tend to be less comfortable working alone.</p><p id="be5e552b-79df-4a86-83e6-aa2b39fe4908" class=""><mark class="highlight-teal"><strong>Application: </strong></mark><mark class="highlight-default">Develop team-based activity for individuals who are relaying on it for full time, this can help build a sense of community and support.</mark></p><p id="2ebb491e-3b90-4313-939c-4c953bd444a6" class="">
+</p><h2 id="f174bc69-d95b-4679-b88c-4460235d8f1e" class="">Do people with more experience have more knowledge on climate?</h2><div id="19a08a5d-75a9-4e0a-a90c-f687e3e1d7e6" class="column-list"><div id="e1bfd9df-96cb-48ce-80a6-1f5e17218244" style="width:6.25%" class="column"><p id="5c6b4e2f-e49e-4bff-8f31-f945f095285d" class="">
+</p></div><div id="e8ca2237-1332-4aed-9507-69d367e885e4" style="width:93.75%" class="column"><ul id="99a48cf8-adf3-47d0-937b-6fd56cc99b61" class="toggle"><li><details open=""><summary>Visual Representation:</summary><figure id="9d9999bc-236b-494d-8f46-79ec6f5d8710" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.24.03.png"><img style="width:393px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.24.03.png"/></a></figure><p id="fec4d367-97bd-4aef-b947-aec715f03086" class="">
+</p><figure id="c9034b7b-0d7c-4e91-b0bb-6199a3c12664" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.24.26.png"><img style="width:393px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.24.26.png"/></a></figure><figure id="9e7ea051-a20e-4815-b71a-7662b1efea07" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.24.45.png"><img style="width:432px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.24.45.png"/></a></figure><figure id="b4feb29c-d9cb-4a88-8d89-37a690ad6eb3" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.25.16.png"><img style="width:421px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/Screenshot_2024-05-17_at_13.25.16.png"/></a></figure></details></li></ul></div></div><p id="856957e1-af05-416d-b0b0-1178e694919a" class="">Most people possess intermediate knowledge. However, the expert category has a higher number of individuals with 10+ years and 1-4 years of experience. </p><p id="0fb152ba-630a-489c-98cb-04296664f32a" class="">People with 5-9 years of experience are mostly intermediate or beginners, with a small number of experts and none with no knowledge. In contrast, those with less than 1 year of experience are predominantly beginners in the subject of climate change.</p><p id="344ee01a-b4b9-4f48-908e-d54cfd03ace8" class="">
+</p><p id="48f8d36d-3e27-4216-a220-30dbe3d9da2c" class=""><mark class="highlight-teal"><strong>Application:  </strong></mark><mark class="highlight-default">IMMA  can im</mark>plement training programs to enhance climate-related knowledge among beginners and intermediates. Also, promote your services as expert-driven to attract clients looking for high-level expertise.</p><p id="abcbf9f9-e73a-4955-8054-3ba009182d7c" class="">
+</p><p id="964bd333-159e-40fe-84cc-bf192c1f5d7a" class="">
+</p><ul id="7a56ce1d-2d7b-46b2-a2c3-e21d79ac7769" class="toggle"><li><details open=""><summary>Correlation matrix</summary><p id="bf9b574b-868d-4860-b134-9dc7712d391c" class="">
+</p><figure id="c93bdd1f-90df-4450-9887-35346d5547f3" class="image"><a href="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/JuliusImage-2.png"><img style="width:10965px" src="Are%20you%20ready%20to%20Freelance%201189f4b711d64638944c333fd5e564bd/JuliusImage-2.png"/></a></figure></details></li></ul><h2 id="dd2699d9-7bd1-4b47-97c0-5df1e052d79d" class="">Do individuals with more knowledge maintain a public profile?</h2><p id="190417d7-8abb-4e37-9f49-1d9db000afdd" class="">There is a moderate positive correlation between having knowledge in the climate space and maintaining a public profile. This suggests that individuals who are knowledgeable in this specific area are likely to engage more publicly, possibly through presentations, publications, or online content related to climate issues.</p><p id="28b4230b-1089-480f-8f48-3f824166be24" class=""><br/><mark class="highlight-teal"><strong>Application: </strong></mark>Motivate knowledgeable freelancers to engage publicly through blogs, webinars, or social media. This can enhance their visibility and credibility, benefiting both your business and their careers. </p><h2 id="04169af2-9449-4f63-9f85-08e9e4582cff" class="">Do individuals with more knowledge have a support network?</h2><p id="e987bb7f-0323-4868-aa44-58d1b1b27968" class="">Not really, the correlation between knowledge in the climate space and having a support network is relatively low. This indicates that while expertise in a niche area like climate might enhance public engagement, it does not necessarily translate into a stronger or more supportive network.</p><p id="50e81570-abca-4472-907f-e7c1f65b185e" class="">
+</p><p id="91812e78-0603-4b3f-bbd4-71cebc8c64f8" class=""><mark class="highlight-teal"><strong>Application: </strong></mark> Facilitate networking opportunities for your freelancers by organizing events, webinars, and online communities. Encourage them to build public profiles to strengthen their support networks. This is something IMMA is already doing. </p><h2 id="ea3ebbf6-104d-446d-bc74-b97516ede42f" class="">Do people with more knowledge have knowledge on ideal clients? </h2><p id="d210ea3d-4150-46a7-907e-454f8a1c69b5" class="">No, the correlation between knowledge in the climate space and clarity about the ideal client is also low. This could imply that while individuals may have specialized knowledge, they might not have clearly defined their target clientele who could benefit from this expertise.</p><p id="cb051bf9-35e7-4415-bda2-adbb05ff9461" class="">
+</p><p id="f1310f29-9b59-41e2-a12a-57063492aa15" class=""><mark class="highlight-teal"><strong>Application:</strong></mark><mark class="highlight-teal"> </mark><mark class="highlight-default">I</mark>MMA should concentrate on instructing knowledgeable individuals on how to identify potential clients, as this is an area where many people lack expertise.</p><h2 id="58ece6fc-e359-4539-a484-991b61b2fffa" class="">What types of people have support networks?</h2><p id="8f00ba65-2219-4f8c-905d-1289164ec960" class="">There appears to be a strong correlation between having a public profile and having a strong support network. This indicates that individuals who are more visible and active publicly tend to have better support networks, which could be crucial for freelancing success.</p><p id="55357992-3bb2-4919-a2fa-86054cb033b1" class="">
+</p><h1 id="95351ebe-0530-427d-aa42-d2fe5e02281b" class="">Suggestions:</h1><p id="104fea14-f0b6-4ef6-8d01-cd4e82fa64e1" class="">Instead of highly ready, and moderate add numerical values.</p><p id="1873736d-0970-48ac-b0d7-6501be81a52d" class="">Instead of adding 4 categories in the column of highest and lowest categories. Write these four categories separately and ask people to rate it as their highest and lowest categories. </p><p id="5bb1f668-5cf9-4d71-9985-c37023e0f39c" class="">
+</p><p id="e5227dfc-f96a-4fdf-bb0c-9f2bb0381e6b" class="">
+</p><p id="bb7089e8-7233-4a60-b03e-9d1b9a8678c3" class="">
+</p><p id="f40f8e2b-61e2-497e-8156-d77f302ed3f6" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
