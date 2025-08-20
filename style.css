@@ -125,12 +125,12 @@ ul {
   margin-bottom: 6px;
 }
 a {
-  color: #000;              /* black */
+  color: ##003366;              
   text-decoration: underline;   
 }
 
 a:hover,
 a:focus {
-  color: #000;              
+  color: ##003366;              
   text-decoration: underline; 
 }
