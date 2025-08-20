@@ -126,11 +126,11 @@ ul {
 }
 a {
   color: #000;              /* black */
-  text-decoration: none;    /* remove underline */
+  text-decoration: underline;   
 }
 
 a:hover,
 a:focus {
-  color: #000;              /* keep black on hover */
-  text-decoration: underline; /* optional underline on hover */
+  color: #000;              
+  text-decoration: underline; 
 }
