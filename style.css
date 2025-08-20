@@ -44,11 +44,6 @@ h2 {
 }
 
 .job-title {
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.job-title {
   font-size: 18px;       /* Bigger than body text */
   font-weight: bold;
   margin: 0 0 4px 0;     /* Add spacing below */
@@ -78,7 +73,6 @@ h2 {
   align-items: center;
   margin-bottom: 5px;
 }
-
 /* Optional: make details text lighter */
 .job-meta .details {
   font-size: 0.9rem;
@@ -129,4 +123,14 @@ ul {
 
 .skills li, .education li, .honours li {
   margin-bottom: 6px;
+}
+a {
+  color: #000;              /* black */
+  text-decoration: none;    /* remove underline */
+}
+
+a:hover,
+a:focus {
+  color: #000;              /* keep black on hover */
+  text-decoration: underline; /* optional underline on hover */
 }
