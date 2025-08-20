@@ -72,9 +72,19 @@ h2 {
   text-decoration: underline;
 }
 
+.job-meta {
+  display: flex;
+  justify-content: space-between; /* pushes details to the right */
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Optional: make details text lighter */
 .job-meta .details {
-  color: #444;
-  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: normal;
+}
 }
 .reports-section {
   margin-top: 0.5rem;   /* space above reports section */
@@ -96,6 +106,7 @@ h2 {
 .reports-section li {
   margin: 0.2rem 0;
 }
+
 
 .reports-section a {
   text-decoration: none;
