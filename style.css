@@ -115,15 +115,12 @@ h2 {
 ul {
   margin: 5px 0 10px 20px;
 }
-
-.skills, .education, .honours {
-  list-style: none;
-  padding: 0;
+.skill-heading {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
-.skills li, .education li, .honours li {
-  margin-bottom: 6px;
-}
 a {
   color: #003366;              
   text-decoration: underline;   
