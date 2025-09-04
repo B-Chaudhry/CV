@@ -115,6 +115,14 @@ h2 {
 ul {
   margin: 5px 0 10px 20px;
 }
+.skills, .education, .honours {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li, .education li, .honours li {
+  margin-bottom: 6px;
+}
 .skill-heading {
   display: block;
   font-weight: bold;
